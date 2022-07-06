@@ -1,3 +1,11 @@
+## Used technologies
+* Flask
+* Basic HTML
+* Basic CSS
+* MySQL
+* WT-Forms
+
+
 ## Clone This Project (Make Sure You Have Git Installed)
 
 ```
