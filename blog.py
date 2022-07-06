@@ -6,8 +6,7 @@ from functools import wraps
 
 app = Flask(__name__)
 
-# Secret key for Blogrank
-app.secret_key ="blogrankkey"
+
 
 # Register Form Class(name,email,username,password,confirmpassword for register)
 class RegisterForm(Form):
@@ -31,6 +30,8 @@ app.config["MYSQL_DB"] = "blogrank"
 app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 mysql = MySQL(app)
 
+# Secret key for Blogrank
+app.secret_key ="blogrankkey"
 
 # Main Page
 @app.route("/")
