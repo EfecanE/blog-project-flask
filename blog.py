@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Register Form Class(name,email,username,password,confirmpassword for register)
 class RegisterForm(Form):
-    name = StringField("Name",validators=[validators.data_required(),validators.length(min = 4,max = 25, message ="Name must be between 4 and 25 characters")])
+    name = StringField("Name",validators=[validators.data_required(),validators.length(min = 3,max = 25, message ="Name must be between 4 and 25 characters")])
     email = StringField("Email",validators=[validators.data_required(),validators.email(message="Wrong e-mail form")])
     username = StringField("Username",validators=[validators.data_required(),validators.length(min = 5,max = 30)])
     password = PasswordField("Password",validators=[
