@@ -1,7 +1,7 @@
 ## Used technologies
 * Flask
-* Basic HTML
-* Basic CSS
+* HTML
+* CSS
 * Bootstrap
 * MySQL
 * WT-Forms
